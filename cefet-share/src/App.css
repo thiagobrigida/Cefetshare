@@ -1,0 +1,158 @@
+/* Reset básico para garantir que as medidas funcionem bem */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Fundo cinza claro, típico de redes sociais */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+/* Container centralizado estilo feed de celular */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- CABEÇALHO --- */
+header {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #004aad; /* Azul Institucional */
+}
+
+/* --- BOTÕES GERAIS --- */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Botão de Login/Publicar (Primário) */
+button[type="submit"], header button {
+  background-color: #004aad;
+  color: white;
+}
+
+/* Botão de Sair (Secundário - Vermelho suave) */
+header button.sair {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+/* --- FORMULÁRIO DE ANÚNCIO --- */
+.form-box {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+  border: 1px solid #e5e7eb;
+}
+
+.form-box h3 {
+  margin-top: 0;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #f3f4f6;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #004aad;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+/* --- LISTA DE ITENS (CARDS) --- */
+.feed h2 {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.item-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+  border-left: 5px solid #22c55e; /* Faixa verde lateral para destaque */
+}
+
+.item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.item-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.item-card p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* --- BOTÃO DO WHATSAPP --- */
+/* Transformamos o link simples num botão bonito */
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* Verde Oficial do WhatsApp */
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebc57;
+}
